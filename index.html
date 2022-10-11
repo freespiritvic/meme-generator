@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Fira+Code:wght@300&family=Gideon+Roman&family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="memeGenerator.css">
+    <title>Meme Generator</title>
+</head>
+<body>
+    <header>Meme Machine</header>
+    <h3>Fill out the form below to create your meme</h3>
+    <br>
+    <form action="" class="form">
+        <div class="entireSection">
+        <div class="sections">
+            <label for="img"> Upload Image Here 
+                <input type="url" class="memeImage" accept="image/*,video/*" placeholder="place url here...">
+            </label>
+        </div>
+                <br>
+        <div class="sections">
+            <label for="topText"> Top Text
+                <input type="text" class="textOnTop" placeholder="top text here...">
+            </label>
+        </div>
+                <br>
+        <div class="sections">
+            <label for="bottomText"> Bottom Text    
+                <input type="text" class="textOnBottom" placeholder="bottom text here...">
+        </div>
+                <br>
+        </div>
+        <button type="submit" class="btn">Create</button>
+    </form>
+ 
+    <div id="results"></div>
+ 
+    <script src="memegenerator.js"></script>
+</body>
+</html>
